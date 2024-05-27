@@ -10,6 +10,7 @@ function App() {
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
       <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <Routes>
+        <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
       </Routes>
