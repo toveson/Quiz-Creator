@@ -22,7 +22,6 @@ export const NavBar: React.FC<navBarProps> = (props) => {
   ];
 
   const handleChange = (e: React.SyntheticEvent, newValue: string) => {
-    console.log(newValue);
     setCurrentPage(newValue);
     navigate(newValue.toLowerCase());
   };
